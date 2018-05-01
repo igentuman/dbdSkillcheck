@@ -1,0 +1,10 @@
+c:\REPOS\DBD\ScreenCaptureTest\obj\Release\ScreenCaptureTest.Form1.resources
+c:\REPOS\DBD\ScreenCaptureTest\obj\Release\ScreenCaptureTest.Properties.Resources.resources
+c:\REPOS\DBD\ScreenCaptureTest\obj\Release\DBD.csproj.GenerateResource.Cache
+c:\REPOS\DBD\ScreenCaptureTest\obj\Release\DBD.csproj.CoreCompileInputs.cache
+c:\REPOS\DBD\ScreenCaptureTest\bin\Release\ScreenCaptureTest.exe.config
+c:\REPOS\DBD\ScreenCaptureTest\bin\Release\ScreenCaptureTest.exe
+c:\REPOS\DBD\ScreenCaptureTest\bin\Release\ScreenCaptureTest.pdb
+c:\REPOS\DBD\ScreenCaptureTest\obj\Release\ScreenCaptureTest.exe
+c:\REPOS\DBD\ScreenCaptureTest\obj\Release\ScreenCaptureTest.pdb
+c:\REPOS\DBD\ScreenCaptureTest\obj\Release\DBD.csprojResolveAssemblyReference.cache

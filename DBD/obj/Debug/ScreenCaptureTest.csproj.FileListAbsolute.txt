@@ -1,0 +1,10 @@
+c:\users\gen2man\source\repos\ScreenCaptureTest\ScreenCaptureTest\bin\Debug\ScreenCaptureTest.exe.config
+c:\users\gen2man\source\repos\ScreenCaptureTest\ScreenCaptureTest\bin\Debug\ScreenCaptureTest.exe
+c:\users\gen2man\source\repos\ScreenCaptureTest\ScreenCaptureTest\bin\Debug\ScreenCaptureTest.pdb
+c:\users\gen2man\source\repos\ScreenCaptureTest\ScreenCaptureTest\obj\Debug\ScreenCaptureTest.csprojResolveAssemblyReference.cache
+c:\users\gen2man\source\repos\ScreenCaptureTest\ScreenCaptureTest\obj\Debug\ScreenCaptureTest.Properties.Resources.resources
+c:\users\gen2man\source\repos\ScreenCaptureTest\ScreenCaptureTest\obj\Debug\ScreenCaptureTest.csproj.GenerateResource.Cache
+c:\users\gen2man\source\repos\ScreenCaptureTest\ScreenCaptureTest\obj\Debug\ScreenCaptureTest.csproj.CoreCompileInputs.cache
+c:\users\gen2man\source\repos\ScreenCaptureTest\ScreenCaptureTest\obj\Debug\ScreenCaptureTest.exe
+c:\users\gen2man\source\repos\ScreenCaptureTest\ScreenCaptureTest\obj\Debug\ScreenCaptureTest.pdb
+C:\Users\gen2man\source\repos\ScreenCaptureTest\ScreenCaptureTest\obj\Debug\ScreenCaptureTest.Form1.resources
