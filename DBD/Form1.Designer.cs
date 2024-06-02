@@ -1,6 +1,6 @@
 ﻿namespace ScreenCaptureTest
 {
-    partial class Form1
+    partial class Main
     {
         /// <summary>
         /// Required designer variable.
@@ -31,14 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,33 +43,30 @@
             this.r = new System.Windows.Forms.TextBox();
             this.g = new System.Windows.Forms.TextBox();
             this.b = new System.Windows.Forms.TextBox();
+            this.skillcheck_bind = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.indicator = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.indicator)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 1;
+            this.timer1.Interval = 32;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Location = new System.Drawing.Point(14, 12);
+            this.pictureBox8.Location = new System.Drawing.Point(28, -119);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(140, 140);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox8.TabIndex = 12;
             this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(14, 158);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(140, 140);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox8.Visible = false;
             // 
             // label1
             // 
@@ -94,25 +86,8 @@
             this.label2.TabIndex = 20;
             this.label2.Text = "0";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(14, 314);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 22);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "Test API";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // timer2
-            // 
-            this.timer2.Interval = 10;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -122,35 +97,19 @@
             this.groupBox1.Controls.Add(this.r);
             this.groupBox1.Controls.Add(this.g);
             this.groupBox1.Controls.Add(this.b);
-            this.groupBox1.Location = new System.Drawing.Point(14, 342);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.Location = new System.Drawing.Point(150, 83);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(140, 122);
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Color";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(86, 23);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(34, 13);
-            this.label7.TabIndex = 37;
-            this.label7.Text = "Arrow";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 23);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 13);
-            this.label6.TabIndex = 36;
-            this.label6.Text = "Check Zone";
+            this.groupBox1.Text = "Colors";
+            this.groupBox1.Visible = false;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(60, 96);
+            this.label5.Location = new System.Drawing.Point(61, 94);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(14, 13);
             this.label5.TabIndex = 35;
@@ -168,7 +127,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(60, 42);
+            this.label3.Location = new System.Drawing.Point(60, 45);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(15, 13);
             this.label3.TabIndex = 33;
@@ -222,57 +181,139 @@
             this.b.TabIndex = 27;
             this.b.Text = "20";
             // 
-            // Form1
+            // skillcheck_bind
+            // 
+            this.skillcheck_bind.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.skillcheck_bind.Items.AddRange(new object[] {
+            "Mouse1",
+            "Mouse2",
+            "Mouse Middle",
+            "Space",
+            "Tab",
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "Y",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z"});
+            this.skillcheck_bind.Location = new System.Drawing.Point(13, 44);
+            this.skillcheck_bind.Name = "skillcheck_bind";
+            this.skillcheck_bind.Size = new System.Drawing.Size(140, 21);
+            this.skillcheck_bind.TabIndex = 28;
+            this.skillcheck_bind.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label7.Location = new System.Drawing.Point(12, 24);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(79, 13);
+            this.label7.TabIndex = 30;
+            this.label7.Text = "Skillcheck bind";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.SystemColors.Control;
+            this.label6.Location = new System.Drawing.Point(15, 83);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(134, 13);
+            this.label6.TabIndex = 31;
+            this.label6.Text = "CTRL+SHIFT+E - Minimize";
+            // 
+            // indicator
+            // 
+            this.indicator.BackColor = System.Drawing.Color.Lime;
+            this.indicator.Location = new System.Drawing.Point(2, 2);
+            this.indicator.Name = "indicator";
+            this.indicator.Size = new System.Drawing.Size(12, 12);
+            this.indicator.TabIndex = 32;
+            this.indicator.TabStop = false;
+            this.indicator.Visible = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.SystemColors.Control;
+            this.label8.Location = new System.Drawing.Point(12, 107);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(128, 13);
+            this.label8.TabIndex = 33;
+            this.label8.Text = "CTRL+SHIFT+Q - On/Off";
+            // 
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(165, 484);
+            this.ClientSize = new System.Drawing.Size(165, 138);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.indicator);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.skillcheck_bind);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.KeyPreview = true;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "Main";
             this.Opacity = 0.5D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DBD";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.indicator)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox r_ring;
         private System.Windows.Forms.TextBox g_ring;
         private System.Windows.Forms.TextBox b_ring;
         private System.Windows.Forms.TextBox r;
         private System.Windows.Forms.TextBox g;
         private System.Windows.Forms.TextBox b;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox skillcheck_bind;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox indicator;
+        private System.Windows.Forms.Label label8;
     }
 }
 
